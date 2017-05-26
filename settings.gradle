@@ -1,1 +1,1 @@
-include ':app', ':bottomApp', ':twoapp', ':threeApp', ':dialogApp', ':bottomNavViewPage', ':testGithub'
+include ':app', ':bottomApp', ':twoapp', ':threeApp', ':dialogApp', ':bottomNavViewPage', ':testGithub', ':myfirstwear'
