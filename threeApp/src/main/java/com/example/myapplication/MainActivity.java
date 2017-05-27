@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.example.myapplication.widget.BottomNavigationBar;
 import com.example.myapplication.widget.Menu;
-import com.example.myapplication.widget.NavigationItem;
 
 /**
  * Created by Administrator on 2017/5/24.
@@ -41,10 +40,10 @@ public class MainActivity extends Activity{
         Intent intent = new Intent(this, MainActivity.class);
         obj.setIntent(intent);
 
-        bottomNavigationBar.addItemView(0, obj, "opinion",R.drawable.ic_opinion_blue_24dp, R.drawable.ic_opinion_black_24dp);
-        bottomNavigationBar.addItemView(0, obj, "submit",R.drawable.ic_submit_blue_24dp, R.drawable.ic_submit_black_24dp);
-        bottomNavigationBar.addItemView(0, obj, "circulated",R.drawable.ic_circulated_blue_24dp, R.drawable.ic_circulated_black_24dp);
-        bottomNavigationBar.addItemView(0, obj, "more",R.drawable.ic_more_blue_24dp, R.drawable.ic_more_black_24dp);
+        bottomNavigationBar.addItemView(0, obj, "opinion",R.mipmap.n_opinion_blue, R.mipmap.n_opinion_black);
+        bottomNavigationBar.addItemView(0, obj, "submit",R.mipmap.n_submit_blue, R.mipmap.n_submit_black);
+        bottomNavigationBar.addItemView(0, obj, "more",R.mipmap.n_more_blue, R.mipmap.n_more_black);
+        bottomNavigationBar.addItemView(0, obj, "121",R.mipmap.n_opinion_blue, R.mipmap.n_opinion_black);
 
         bottomNavigationBar.setType(BottomNavigationBar.NavShowType.NORMAL);
 
