@@ -24,6 +24,7 @@ public class BaseHandler extends Handler {
     public void handleMessage(Message msg) {
         if (reference != null && reference.get() != null) {
             reference.get().handlerMessage(msg);
+
         }
     }
 
