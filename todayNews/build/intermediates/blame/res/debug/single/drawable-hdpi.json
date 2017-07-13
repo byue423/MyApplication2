@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\splash_banner.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\src\\main\\res\\drawable-hdpi\\splash_banner.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\src\\main\\res\\drawable-hdpi\\loading.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\viewicon_splash.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\src\\main\\res\\drawable-hdpi\\viewicon_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\MyApplication2\\todayNews\\src\\main\\res\\drawable-hdpi\\icon.png"
+    }
+]

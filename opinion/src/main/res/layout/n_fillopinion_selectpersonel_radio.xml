@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/selectedPersonLayoutR"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.45"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectedPerson"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/selectedPersonR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/deletePersonR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/deleteSelectPerson"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingTop="5dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/personelselect" />
+
+            <TextView
+                android:id="@+id/radio_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dip"
+                android:background="#e4e4e4"
+                android:padding="6sp"
+                android:text="@string/common_per"
+                android:textColor="#ff000000"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.3"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:paddingLeft="10dip" >
+
+            <RadioGroup
+                android:id="@+id/selectPersonnelRadioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+            </RadioGroup>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#a7c6da"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#a7c6da"
+            android:gravity="center"
+            android:text="@string/fillOpinionGuide"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/returnSelectLinkRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/fillOpinionPrivious"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fillOpinionSelectR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:text="@string/fillOpinionConfirmSelect"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fillOpinionCommitR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:text="@string/fillOpinionCommit"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

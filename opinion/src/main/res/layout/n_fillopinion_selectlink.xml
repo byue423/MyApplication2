@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <!--可选环节-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip">
+
+        <TextView
+            android:id="@+id/resultnotion_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[下一环节]"
+            android:textColor="#ff000000" />
+        <LinearLayout
+            android:id="@+id/n_links"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ececec">
+
+        </LinearLayout>
+
+        <!--<ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+
+            <RadioGroup
+                android:id="@+id/linkRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></RadioGroup>
+        </ScrollView>-->
+    </LinearLayout>
+
+    <!--已选人界面-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="15dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[下一处理人]"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:layout_toLeftOf="@+id/n_d"
+                android:layout_marginRight="13dp"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/n_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:layout_toLeftOf="@+id/n_look"
+                android:layout_marginRight="13dp"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/n_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:textColor="#ff000000" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/n_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!--<TableLayout
+                android:id="@+id/n_table"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+            </TableLayout>-->
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#a7c6da"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <Button
+            android:id="@+id/returnFillOpinion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/fillOpinionPrivious"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/jumpto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/selectLinkNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:text="@string/fillOpinionCommit"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#000000"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectingPersonTransmitSignLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingTop="5dip"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/selectingPersonGuide"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:id="@+id/transmitsign_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dip"
+                    android:background="#e4e4e4"
+                    android:gravity="center"
+                    android:padding="6sp"
+                    android:text="@string/common_per"
+                    android:textColor="#ff000000"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/select_nos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂时没有可选的人员"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--选择人员-->
+                    <LinearLayout
+                        android:id="@+id/n_tra_selectingPersonCountSign"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <!--可选择的部门-->
+                    <LinearLayout
+                        android:id="@+id/n_tra_dep"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/n_tra_select_dep"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:cacheColorHint="#00000000"></ListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#a7c6da"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/returnSelectLinkTransmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/fillOpinionPrivious"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/returnPreviousDepartmentTransmitSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/returnPreviousDepartmentGuide"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/fillOpinionSelectTransmitSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/fillOpinionConfirmSelect"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/fillOpinionCommitTransmitSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/fillOpinionCommit"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+软件更新
+	updateSoftware()
+	注：返回的xml：
+			updateversion里面表示是否强制更新：force-表示强制更新；unforce-表示不强制更新
+	        updatecontent  放置此次客户端需要更新的内容（更新内容间用半角“;”分隔，
+	            未放置服务器因疏忽使用全角“；”，客户端解析分隔字符串时使用全角“；”、半角“;”两种）
+		1.经营分析系统
+		<?xml version='1.0' encoding='UTF-8'?>
+            <response>
+                <version></version>
+                <versionCode></versionCode>
+                <updateVersion></updateVersion>
+                <url></url>
+                <updateMsg>
+                    1.android增加问卷调查功能;2.增加更新提示功能;3.修复xxxbug问题;
+                </updateMsg>
+                <md5check>7035d6e6cb88fa010d058</ md5check >
+		    </response>
+		</xml>

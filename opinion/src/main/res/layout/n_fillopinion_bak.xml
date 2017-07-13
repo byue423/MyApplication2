@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:background="#349be8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/returnIndex"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/sysnameTop"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/returnBack"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <!--top menu-->
+    <LinearLayout
+        android:id="@+id/top_menu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="#00ffffff"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#A6A6A6" />
+
+        <LinearLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="makekekke" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="101dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/pop_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--view flipper-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="0dip"
+        android:paddingTop="5dip">
+
+        <ViewFlipper
+            android:id="@+id/viewFipperFillOpinion"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!-- 0： 填写意见（填写意见->选环节->选人） -->
+
+            <include layout="@layout/n_fillopinion_fill" />
+
+            <!--  1： 选择环节（填写意见->选环节->选人）-->
+
+            <include layout="@layout/n_fillopinion_selectlink" />
+
+            <!--  2：  选人-无人员选择 -->
+
+            <include layout="@layout/n_fillopinion_selectpersonel_noselect" />
+
+            <!-- 3：  多选人员 -->
+
+            <include layout="@layout/n_fillopinion_selectpersonel_checkbox" />
+
+            <!-- 4：  单选人员 -->
+
+            <!--<include layout="@layout/n_fillopinion_selectpersonel_radio" />
+
+            &lt;!&ndash; 5：  会签选人 &ndash;&gt;
+
+            <include layout="@layout/n_fillopinion_selectpersonel_countersign" />
+
+            &lt;!&ndash; 6：  转办选人 &ndash;&gt;
+
+            <include layout="@layout/n_fillopinion_selectpersonel_transmitsign" />
+
+            &lt;!&ndash; 7：  多环节提交 &ndash;&gt;
+
+            <include layout="@layout/fillopinion_submit_mutilink" />
+
+            &lt;!&ndash; 8：  填写意见（选环节->选人->填写意见） &ndash;&gt;
+
+            <include layout="@layout/fillopinion_fill_linkpersonopinion" />
+
+            &lt;!&ndash; 9：  选择环节（选环节->选人->填写意见）(工程系统、报账系统) &ndash;&gt;
+
+            <include layout="@layout/fillopinion_selectlink_linkpersonopinion" />
+
+            &lt;!&ndash; 10： 填写意见（选环节->选人->填写意见）(合同系统) &ndash;&gt;
+
+            <include layout="@layout/gd_fillopinion_fill_linkpersoncontact" />
+
+            &lt;!&ndash; 11： 采购寻源系统（申报页面） &ndash;&gt;
+
+            <include layout="@layout/fillopinion_fill_declare" />
+            &lt;!&ndash; 12： 采购寻源系统（申报页面） &ndash;&gt;
+
+            <include layout="@layout/fillopinion_selectlink_linkpersonopinion_purchase" />-->
+        </ViewFlipper>
+    </LinearLayout>
+
+
+</LinearLayout>

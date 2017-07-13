@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Download</string>
+
+    <string name="download_start">Start</string>
+    <string name="download_pause">Pause</string>
+
+    <string name="single">SingleThread</string>
+    <string name="multith">MultithThread</string>
+</resources>
