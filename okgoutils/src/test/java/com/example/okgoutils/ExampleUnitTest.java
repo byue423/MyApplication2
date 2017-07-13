@@ -1,4 +1,4 @@
-package com.example.testgithub;
+package com.example.okgoutils;
 
 import org.junit.Test;
 
